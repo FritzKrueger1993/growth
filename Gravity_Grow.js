@@ -48,13 +48,8 @@ function draw() {
   circle(mainX, mainY, mainDiameter);
   if (mainDiameter >= width*1.7 && mainDiameter >= height*1.7) {
     textColor=lerp(textColor, 0, 0.01 );
-    if (windowWidth <= 500) {
-      textSize(40);
-    } else {
-      textSize(100);
-    }
     fill(textColor);
-    textSize(100);
+    textSize(map(windowWidth,300,1980,30,100));
     textAlign(CENTER, CENTER);
     text('Is there a limit to grwoth?', width/2, height/2);
   }
