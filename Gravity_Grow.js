@@ -15,6 +15,7 @@ let textColor = 255;
 let hypo = [];
 
 function setup() {
+  noCursor();
   createCanvas (windowWidth - displayComp, windowHeight - displayComp);
   background(0);
   setPos();
@@ -31,9 +32,9 @@ function draw() {
     gravityX[i] = map(difX[i], 0, width, 0.003, 0.000000001);
     gravityY[i] = map(difY[i], 0, height, 0.003, 0.000000001);
     hypo[i] = sqrt( pow(difX[i], 2) + pow(difY[i], 2) );
-    if ( hypo[i] <= mainDiameter ) {
-      gravityX[i] *= 1.5;
-      gravityY[i] *= 1.5;
+    if ( hypo[i] <= mainDiameter *0.5 + 30 ) {
+      gravityX[i] *= 10;
+      gravityY[i] *= 10;
     }
     x[i] = lerp(x[i], mainX, gravityX[i]);
     y[i] = lerp(y[i], mainY, gravityY[i]);
