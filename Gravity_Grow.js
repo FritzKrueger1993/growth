@@ -51,7 +51,7 @@ function draw() {
     fill(textColor);
     textSize(map(windowWidth,300,1980,30,100));
     textAlign(CENTER, CENTER);
-    text('Is there a limit to grwoth?', width/2, height/2);
+    text('Is there a limit to growth?', width/2, height/2);
   }
 }
 
