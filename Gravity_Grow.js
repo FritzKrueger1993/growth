@@ -78,6 +78,6 @@ function setPos() {
 }
 
 function mousePressed() {
-  //setPos();
+  setPos();
   //fullscreen(1);
 }
