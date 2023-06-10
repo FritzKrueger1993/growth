@@ -15,7 +15,7 @@ let textColor = 255;
 let hypo = [];
 
 function setup() {
-  noCursor();
+  //noCursor();
   createCanvas (windowWidth - displayComp, windowHeight - displayComp);
   background(0);
   setPos();
@@ -78,6 +78,6 @@ function setPos() {
 }
 
 function mousePressed() {
-  setPos();
-  fullscreen(1);
+  //setPos();
+  //fullscreen(1);
 }
